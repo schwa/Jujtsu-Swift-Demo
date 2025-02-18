@@ -61,7 +61,7 @@ impl Repo {
         ++ "\0"
         "#;
 
-        let output = Command::new("jj")
+        let output = Command::new("/opt/homebrew/bin/jj")
             .arg("--repository")
             .arg(&self.path)
             .arg("--ignore-working-copy")

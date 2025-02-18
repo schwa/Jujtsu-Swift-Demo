@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		451210082D645A25008232F4 /* jj-api in Frameworks */ = {isa = PBXBuildFile; productRef = 451210072D645A25008232F4 /* jj-api */; };
 		45A7DB092D644D03002AF26F /* jj-api in Frameworks */ = {isa = PBXBuildFile; productRef = 45A7DB082D644D03002AF26F /* jj-api */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +29,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				45A7DB092D644D03002AF26F /* jj-api in Frameworks */,
+				451210082D645A25008232F4 /* jj-api in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +73,7 @@
 			name = "JJ-Mac-Demo";
 			packageProductDependencies = (
 				45A7DB082D644D03002AF26F /* jj-api */,
+				451210072D645A25008232F4 /* jj-api */,
 			);
 			productName = "JJ-Mac-Demo";
 			productReference = 456863B52D643D64004DE83F /* JJ-Mac-Demo.app */;
@@ -101,7 +104,7 @@
 			mainGroup = 456863AC2D643D64004DE83F;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				45A7DB072D644D03002AF26F /* XCLocalSwiftPackageReference "../jj-api/swift/jj-api" */,
+				451210062D645A25008232F4 /* XCLocalSwiftPackageReference "../swift/jj-api" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 456863B62D643D64004DE83F /* Products */;
@@ -330,13 +333,17 @@
 /* End XCConfigurationList section */
 
 /* Begin XCLocalSwiftPackageReference section */
-		45A7DB072D644D03002AF26F /* XCLocalSwiftPackageReference "../jj-api/swift/jj-api" */ = {
+		451210062D645A25008232F4 /* XCLocalSwiftPackageReference "../swift/jj-api" */ = {
 			isa = XCLocalSwiftPackageReference;
-			relativePath = "../jj-api/swift/jj-api";
+			relativePath = "../swift/jj-api";
 		};
 /* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		451210072D645A25008232F4 /* jj-api */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = "jj-api";
+		};
 		45A7DB082D644D03002AF26F /* jj-api */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = "jj-api";
