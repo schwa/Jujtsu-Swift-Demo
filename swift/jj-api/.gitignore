@@ -1,0 +1,12 @@
+.DS_Store
+/.build
+/Packages
+xcuserdata/
+DerivedData/
+.swiftpm/configuration/registries.json
+.swiftpm/xcode/package.xcworkspace/contents.xcworkspacedata
+.netrc
+
+out
+swift/jj-api/jj_apiFFI.xcframework
+swift/jj-api/Sources/jj-api/jj_api.swift
