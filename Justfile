@@ -16,3 +16,6 @@ clean:
     rm -rf out
     rm -rf swift/jj-api/jj_apiFFI.xcframework
     rm -rf swift/jj-api/Sources/jj-api/jj_api.swift
+
+run-swift: build
+    swift run --package-path swift/jj-api

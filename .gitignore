@@ -1,3 +1,4 @@
 /target
-/old
-/swift/jj-api/libjj_api.xcframework
+/out
+/swift/jj-api/jj_apiFFI.xcframework
+/swift/jj-api/Sources/jj-api/jj_api.swift

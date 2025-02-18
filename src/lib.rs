@@ -102,6 +102,28 @@ pub struct Change {
     pub description: String,
 }
 
+#[uniffi::export]
+impl Change {
+    pub fn change_id(&self) -> ChangeId {
+        self.change_id.clone()
+    }
+    pub fn commit_id(&self) -> String {
+        self.commit_id.clone()
+    }
+    pub fn divergent(&self) -> bool {
+        self.divergent
+    }
+    pub fn immutable(&self) -> bool {
+        self.immutable
+    }
+    pub fn author(&self) -> Author {
+        self.author.clone()
+    }
+    pub fn description(&self) -> String {
+        self.description.clone()
+    }
+}
+
 impl Change {
     fn from_log_str(slice: &str) -> Self {
         let mut shortest_change_id = String::new();
@@ -152,16 +174,36 @@ impl Change {
     }
 }
 
-#[derive(Debug, uniffi::Object)]
+#[derive(Debug, Clone, uniffi::Object)]
 pub struct ChangeId {
     pub id: String,
     pub shortest_id: String,
 }
 
-#[derive(Debug, uniffi::Object)]
+#[uniffi::export]
+impl ChangeId {
+    pub fn id(&self) -> String {
+        self.id.clone()
+    }
+    pub fn shortest_id(&self) -> String {
+        self.shortest_id.clone()
+    }
+}
+
+#[derive(Debug, Clone, uniffi::Object)]
 pub struct Author {
     pub email: String,
     pub name: String,
+}
+
+#[uniffi::export]
+impl Author {
+    pub fn email(&self) -> String {
+        self.email.clone()
+    }
+    pub fn name(&self) -> String {
+        self.name.clone()
+    }
 }
 
 fn true_or_false(value: &str) -> bool {

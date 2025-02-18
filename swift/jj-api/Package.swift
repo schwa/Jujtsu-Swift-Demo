@@ -10,6 +10,8 @@ let package = Package(
     ],
     targets: [
         .target(name: "jj-api", dependencies: ["jj_apiFFI"]),
-        .binaryTarget(name: "jj_apiFFI", path: "jj_apiFFI.xcframework")
+        .binaryTarget(name: "jj_apiFFI", path: "jj_apiFFI.xcframework"),
+        .executableTarget(name: "jj-api-cli", dependencies: ["jj-api"])
+
     ]
 )
